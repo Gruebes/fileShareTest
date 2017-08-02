@@ -15,7 +15,11 @@
         var client = filestack.init('A6MuEJwhOQw2pWOWHQrF6z');
 
         function showPicker() {
-            client.pick({}).then(function(result) {
+            client.pick({
+                fromSources: ['local_file_system', 'facebook', 'instagram', 'webcam', ],
+                maxSize: 1024 * 2024,
+                maxFiles: 3,
+            }).then(function(result) {
                 console.log(JSON.stringify(result.filesUploaded))
             });
         }
