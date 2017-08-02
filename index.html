@@ -17,7 +17,7 @@
         function showPicker() {
             client.pick({
                 fromSources: ['local_file_system', 'facebook', 'instagram', 'webcam', ],
-                maxSize: 1024 * 2024,
+                maxSize: 10 * 1024 * 1024,
                 maxFiles: 3,
             }).then(function(result) {
                 console.log(JSON.stringify(result.filesUploaded))
