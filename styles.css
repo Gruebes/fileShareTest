@@ -3,7 +3,7 @@ body {
 }
 
 .your-class {
-    margin: 0 50px;
+    /* margin: 0 50px; */
 }
 
 .slick-slide img {
@@ -12,4 +12,8 @@ body {
 
 .carousel-card {
     margin: 30px;
+}
+
+.hero-image {
+    height: 200px;
 }
